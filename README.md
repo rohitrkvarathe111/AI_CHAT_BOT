@@ -17,3 +17,46 @@ FastAPI chat application with FAISS-based context retrieval, async SQLAlchemy OR
 https://github.com/rohitrkvarathe111/AI_CHAT_BOT
 cd AI_CHAT_BOT
 ```
+
+## Create a virtual environment and activate it:
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+```
+
+
+
+
+## Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+
+## Set your Perplexity API key in main.py or replace in code:
+## Run the application:
+```bash
+uvicorn main:app --reload
+```
+
+
+
+
+## API Endpoints
+
+### POST /register: Create a new user
+
+### POST /login: Login and get JWT token
+
+### POST /chat: Send a query and get AI response (requires authentication)
+
+
+## Tech Stack
+
+- FastAPI
+- SQLAlchemy (async)
+- FAISS (vector search)
+- Perplexity AI API
+- SQLite (any SQL database)

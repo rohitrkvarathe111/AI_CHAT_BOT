@@ -40,7 +40,7 @@ async def call_perplexity_api(query: str, context: str) -> str:
         ]
     }
     try:
-        async with httpx.AsyncClient(timeout=30.0) as client:  # <-- increase timeout
+        async with httpx.AsyncClient(timeout=30.0) as client: 
             response = await client.post(PERPLEXITY_URL, headers=headers, json=payload)
             response.raise_for_status()
             data = response.json()

@@ -10,6 +10,14 @@ FastAPI chat application with FAISS-based context retrieval, async SQLAlchemy OR
 - **User Authentication**: Register and login with JWT-based authentication.
 - **Async SQLAlchemy ORM**: Stores users and chat messages in a database asynchronously.
 
+## Tech Stack
+
+- FastAPI
+- SQLAlchemy (async)
+- FAISS (vector search)
+- Perplexity AI API
+- SQLite (any SQL database)
+
 ## Installation
 
 1. Clone the repository:
@@ -53,10 +61,3 @@ uvicorn main:app --reload
 ### POST /chat: Send a query and get AI response (requires authentication)
 
 
-## Tech Stack
-
-- FastAPI
-- SQLAlchemy (async)
-- FAISS (vector search)
-- Perplexity AI API
-- SQLite (any SQL database)

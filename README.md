@@ -55,9 +55,35 @@ uvicorn main:app --reload
 ## API Endpoints
 
 ### POST /register: Create a new user
+```bash
+curl --location 'http://localhost:8000/login' \
+--header 'accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: csrftoken=H8tnAyl2RxRe1aTnhpYjmS8RuGa0h2F2hTpU9XPaSh1gp1lPAE0b1F1OoTv2pcMe' \
+--data '{
+  "username": "rohit",
+  "password": "rohit"
+}'
+
+```
 
 ### POST /login: Login and get JWT token
+```bash
+curl --location 'http://localhost:8000/login' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: csrftoken=H8tnAyl2RxRe1aTnhpYjmS8RuGa0h2F2hTpU9XPaSh1gp1lPAE0b1F1OoTv2pcMe' \
+--data '{
+  "username": "rohit",
+  "password": "rohit"
+}'
+```
 
 ### POST /chat: Send a query and get AI response (requires authentication)
+```bash
+curl --location 'http://127.0.0.1:8000/chat' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzU2MTQ4MDcxfQ.nfudIGvZQmUMyRhEhf48EwT2BA2QZ6WdJubHY_hUtRs' \
+--data '{"query":"What is Python?","variables":{}}'
+```
 
 

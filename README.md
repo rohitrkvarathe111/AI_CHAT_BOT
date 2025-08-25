@@ -14,6 +14,6 @@ FastAPI chat application with FAISS-based context retrieval, async SQLAlchemy OR
 
 1. Clone the repository:
 ```bash
-[git clone https://github.com/<your-username>/fastapi-faiss-chat.git](https://github.com/rohitrkvarathe111/AI_CHAT_BOT/)
+https://github.com/rohitrkvarathe111/AI_CHAT_BOT
 cd AI_CHAT_BOT
 ```
